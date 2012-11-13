@@ -1,0 +1,27 @@
+
+- Deputados mais interrompidos
+- Deputados com mais chamadas de atenção do presidente
+  - quantas chamadas de atenção já teve?
+
+txtproc
+  eliminar newlines duplas
+  remover cabeçalho, processar meta-dados e colocar no início do output
+
+txtlint
+  verificar que partidos estão todos direitos
+  verificar que ministros existem e correspondem
+  detectar oradores que não são deputados (comparar com o json dos deputados?)
+
+método get_speaker
+  procura deputados
+    não deve haver conflitos só para uma legislatura, depois podemos alargar
+    e usar verificações adicionais (ex. filtrar por partido)
+  procura outras pessoas 
+    modelo Person
+      name
+      shortname
+      party (pode ser None no caso de ser um convidado, ou PR)
+
+mandate
+  adicionar cargos de presidente e secretário
+
